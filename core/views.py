@@ -7,11 +7,6 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
-def contact(request):
-    return render(request, 'contact.html')
-
-def faq(request):
-    return render(request, 'faq/faq.html')
 
 def error404(request):
     return render(request, '404-error.html')

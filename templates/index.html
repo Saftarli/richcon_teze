@@ -2,25 +2,25 @@
 {%  load static %}
 {% block body   %}
 	<!-- Banner Area Start -->
-	<div class="banner__one" style="background-image: url('img/shape/banner-shape.png');">
+	<div class="banner__one" style="background-image: url('{% static 'img/shape/banner-shape.png' %}');">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="banner__one-content">
 						<h1 class="title_split_anim">Building Construction Solutions</h1>
 						<div class="banner__one-content-user wow fadeInUp" data-wow-delay=".6s">
-							<img src="img/avatar/user.png" alt="image">
+							<img src="{% static 'img/avatar/user.png' %}" alt="image">
 							<h5>More then 25K Clients Reviews</h5>
 						</div>
 						<div class="banner__one-content-award bounce_y">
-							<img src="img/shape/award.png" alt="image">
+							<img src="{% static 'img/shape/award.png' %}" alt="image">
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="banner__one-image">
-			<img class="img_full" src="img/banner/banner.jpg" alt="image">
+			<img class="img_full" src="{% static 'img/banner/banner.jpg' %}" alt="image">
 		</div>
 	</div>
 	<!-- Banner Area ebd -->
@@ -37,7 +37,7 @@
 						<div class="row al-center mt-45">
 							<div class="col-md-4 md-mb-25">
 								<div class="about__one-left-image wow fadeInLeft" data-wow-delay=".4s">
-									<img class="md_img_full" src="img/about/about-2.jpg" alt="image">
+									<img class="md_img_full" src="{% static 'img/about/about-2.jpg' %}" alt="image">
 									<div class="video video-pulse">
 										<a class="video-popup" href="https://youtube.com/watch?v=0WC-tD-njcA"><i class="fas fa-play"></i></a> 
 									</div>
@@ -69,7 +69,7 @@
 				</div>
 				<div class="col-lg-5">
 					<div class="about__one-right t-right">
-						<img class="wow img_right_animation lg_img_full" src="img/about/about-1.jpg" alt="image">
+						<img class="wow img_right_animation lg_img_full" src="{% static 'img/about/about-1.jpg' %}" alt="image">
 					</div>
 				</div>
 			</div>

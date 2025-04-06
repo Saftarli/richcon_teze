@@ -9,7 +9,7 @@
 					<div class="breadcrumb__area-content">
 						<h2>Contact Us</h2>
 						<ul>
-							<li><a href="index.html">Home</a><i class="fa-regular fa-angle-right"></i></li>
+							<li><a href="../index.html">Home</a><i class="fa-regular fa-angle-right"></i></li>
 							<li>Contact Us</li>
 						</ul>
 					</div>
@@ -61,39 +61,49 @@
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInRight" data-wow-delay=".4s">
-                    <div class="contact__area-form">
-                        <h4>Send Message</h4>
-                        <form action="#">
-							<div class="row">
-								<div class="col-md-6 mb-25">
-									<div class="contact__form-area-item">
-										<input type="text" name="name" placeholder="Full Name" required="required">
-									</div>
-								</div>
-								<div class="col-md-6 md-mb-25">
-									<div class="contact__form-area-item">
-										<input type="email" name="email" placeholder="Email Address" required="required">
-									</div>
-								</div>
-								<div class="col-md-12 mb-25">
-									<div class="contact__form-area-item">
-										<input type="text" name="subject" placeholder="Subject">
-									</div>
-								</div>
-								<div class="col-md-12 mb-25">
-									<div class="contact__form-area-item">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="col-md-12">
-									<div class="contact__form-area-item">
-										<button class="build_button" type="submit">Submit Message <i class="flaticon-right-up"></i></button>
-									</div>
-								</div>
-							</div>
-						</form>
+    <div class="contact__area-form">
+        <h4>Send Message</h4>
+
+        {% if success %}
+            <div class="alert alert-success" role="alert" style="margin-bottom: 20px; color: green; font-weight: bold;">
+                Mesajınız uğurla göndərildi! Təşəkkür edirik.
+            </div>
+        {% endif %}
+        <form method="post" action="">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-6 mb-25">
+                    <div class="contact__form-area-item">
+                        {{ form.name }}
                     </div>
                 </div>
+                <div class="col-md-6 md-mb-25">
+                    <div class="contact__form-area-item">
+                        {{ form.email }}
+                    </div>
+                </div>
+                <div class="col-md-12 mb-25">
+                    <div class="contact__form-area-item">
+                        {{ form.subject }}
+                    </div>
+                </div>
+                <div class="col-md-12 mb-25">
+                    <div class="contact__form-area-item">
+                        {{ form.message }}
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact__form-area-item">
+                        <button class="build_button" type="submit">
+                            Submit Message <i class="flaticon-right-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
             </div>
         </div>
     </div>
