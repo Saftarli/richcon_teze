@@ -1,0 +1,85 @@
+{% extends "include/base.html" %}
+{% load static %}
+{% block body %}
+
+    <!-- Breadcrumb Area Start -->
+    <div class="breadcrumb__area" style="background-image: url('{% static 'img/page/breadcrumb.jpg' %}');">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="breadcrumb__area-content">
+						<h2>Team Style 02</h2>
+						<ul>
+							<li><a href="index.html">Home</a><i class="fa-regular fa-angle-right"></i></li>
+							<li>Team Style 02</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>       
+    <!-- Breadcrumb Area End -->
+    <!-- Team Area Start -->
+    <div class="team__two section-padding-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 wow fadeInUp mt-25" data-wow-delay=".3s">
+                    <div class="team__area-item">
+                        <img class="img_full" src="{% static 'img/team/member-1.jpg' %}" alt="image">
+                        <div class="team__area-item-content">
+							<span>Project Manager</span>
+                            <h4>Amelia Clover</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp mt-25" data-wow-delay=".6s">
+                    <div class="team__area-item">
+                        <img class="img_full" src="{% static 'img/team/member-2.jpg' %}" alt="image">
+                        <div class="team__area-item-content">
+							<span>Site Engineer</span>
+                            <h4>Julian Wyat</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp mt-25" data-wow-delay=".9s">
+                    <div class="team__area-item">
+                        <img class="img_full" src="{% static 'img/team/member-3.jpg' %}" alt="image">
+                        <div class="team__area-item-content">
+							<span>Safety Officer</span>
+                            <h4>Guy Hawkins</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp mt-25" data-wow-delay=".3s">
+                    <div class="team__area-item">
+                        <img class="img_full" src="{% static 'img/team/member-4.jpg' %}" alt="image">
+                        <div class="team__area-item-content">
+							<span>General Laborer</span>
+                            <h4>Archer Graham</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp mt-25" data-wow-delay=".6s">
+                    <div class="team__area-item">
+                        <img class="img_full" src="{% static 'img/team/team-1.jpg' %}" alt="image">
+                        <div class="team__area-item-content">
+							<span>Lead Architect</span>
+                            <h4>Alan Dosan</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp mt-25" data-wow-delay=".9s">
+                    <div class="team__area-item">
+                        <img class="img_full" src="{% static 'img/team/team-2.jpg' %}" alt="image">
+                        <div class="team__area-item-content">
+							<span>General Laborer</span>
+                            <h4>Sarah Johnson</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Area End -->
+	<!-- Footer Area Start -->
+	{% endblock %}

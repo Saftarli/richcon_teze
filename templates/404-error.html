@@ -1,0 +1,38 @@
+{% extends "include/base.html" %}
+{% load static %}
+{% block body %}
+    <!-- Breadcrumb Area Start -->
+    <div class="breadcrumb__area" style="background-image: url('assets/img/page/breadcrumb.jpg');">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="breadcrumb__area-content">
+						<h2>Page Not Found</h2>
+						<ul>
+							<li><a href="index.html">Home</a><i class="fa-regular fa-angle-right"></i></li>
+							<li>404</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>       
+    <!-- Breadcrumb Area End -->
+    <!-- Error Area Start -->
+    <div class="error section-padding-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="error-page">
+                        <h1>4<span>0</span>4</h1>
+                        <h2>Oops! Page not found.</h2>
+                        <p>The page you are looking for is not available or doesn’t belong to this website!</p>						
+                        <a class="build_button" href="index.html">Back to Home <i class="flaticon-right-up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Error Area End -->
+	<!-- Footer Area Start -->
+{% endblock %}
