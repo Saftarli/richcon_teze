@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'faq.apps.FaqConfig',
     'contact.apps.ContactConfig',
+    'portfolio.apps.PortfolioConfig',
+    'services.apps.ServicesConfig',
 ]
 
 MIDDLEWARE = [
