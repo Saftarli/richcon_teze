@@ -1,4 +1,6 @@
 from django.db import models
+from core.mixins import SeoMixin
+
 
 # Create your models here.
 class Faq(models.Model):
@@ -12,3 +14,9 @@ class Faq(models.Model):
     class Meta:
         verbose_name = 'Faq'
         verbose_name_plural = 'Faq'
+
+class FaqPageIndex(SeoMixin):
+    def __str__(self):
+        return 'Faq Page Index'
+    class Meta:
+        verbose_name = 'Faq Page Index'

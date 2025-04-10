@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_recaptcha',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'contact.apps.ContactConfig',
     'portfolio.apps.PortfolioConfig',
     'services.apps.ServicesConfig',
+
 ]
 
 MIDDLEWARE = [
@@ -105,6 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+RECAPTCHA_PUBLIC_KEY = '6LdgVRIrAAAAAOTR-IS8H6G2M-ufmgu_67thr-Au'
+RECAPTCHA_PRIVATE_KEY = '6LdgVRIrAAAAADqDqPhGv4DF_Ga2ULMujOip_lMJ'
+RECAPTCHA_REQUIRED_SCORE = 0.85  # (əgər v3 istifadə edəcəksənsə)
 
 
 # Internationalization

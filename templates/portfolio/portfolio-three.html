@@ -3,7 +3,7 @@
 {% block body %}
 
     <!-- Breadcrumb Area Start -->
-    <div class="breadcrumb__area" style="background-image: url('assets/img/page/breadcrumb.jpg');">
+    <div class="breadcrumb__area" style="background-image: url({% static 'img/page/breadcrumb.jpg' %});">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mt-25 wow fadeInUp" data-wow-delay=".3s">
 					<div class="portfolio__three-item">
-						<img src="assets/img/portfolio/portfolio-3.jpg" alt="image">
+						<img src="{% static 'img/portfolio/portfolio-3.jpg'  %}" alt="image">
 						<div class="portfolio__three-item-content">
 							<a href="portfolio-details.html"><i class="flaticon flaticon-right-up"></i></a>
 							<span>Public Spaces</span>
